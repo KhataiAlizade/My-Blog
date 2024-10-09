@@ -175,7 +175,7 @@ const App = () => {
       root: null,
       rootMargin: '0px',
       threshold: 0,
-    };
+    }
 
     const observer = new IntersectionObserver(handleIntersection, options);
 
@@ -216,7 +216,7 @@ const App = () => {
     return () => {
       observer.disconnect();
     };
-  }, []);
+  }, [handleIntersection]);
 
 
   const [fix, setFix] = useState(false)
