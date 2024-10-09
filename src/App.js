@@ -15,6 +15,10 @@ import { faWhatsapp as whpicon } from '@fortawesome/free-brands-svg-icons';
 import img2 from './img/picture.png'
 import img3 from './img/Screenshot 2023-07-24 114849.png'
 import img4 from './img/Screenshot 2023-07-24 115049.png'
+import img5 from './img/Screenshot 2024-10-09 213353.png'
+import img6 from './img/Screenshot 2024-10-09 212052.png'
+
+
 const App = () => {
   const [menuOpen, setMenuOpen] = useState(false)
   const OpenedButton = () => {
@@ -115,8 +119,8 @@ const App = () => {
     entries.forEach((entry) => {
       const { target, isIntersecting } = entry;
 
-      if (isIntersecting && !animationTriggered) {  
-         if (target.id === 'AboutMeSection') {
+      if (isIntersecting && !animationTriggered) {
+        if (target.id === 'AboutMeSection') {
           setanimation1(true);
           setanimation2(true);
           setbigAnimation(true);
@@ -218,11 +222,11 @@ const App = () => {
   const [fix, setFix] = useState(false)
 
   const setFixed = () => {
-      if (window.scrollY >= 480) {
-        setFix(true);
-      } else {
-        setFix(false);
-      }
+    if (window.scrollY >= 480) {
+      setFix(true);
+    } else {
+      setFix(false);
+    }
   };
   const handleScroll = () => {
     const windowheight = window.innerHeight;
@@ -273,31 +277,31 @@ const App = () => {
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     window.addEventListener('scroll', setFixed);
-  
+
     return () => {
       window.removeEventListener('scroll', handleScroll);
       window.removeEventListener('scroll', setFixed);
     };
   }, []);
-  
+
 
   return (
     <div>
       <header id='header'>
-        <div className={ fix ? 'fixed' : "hdr_mainitem"}>
+        <div className={fix ? 'fixed' : "hdr_mainitem"}>
           <div className='hdr_firstitem'>
-            <img className={fix? 'fixedimg' : 'hdrimg'} src={img1} alt='logo' />
-            <p className={fix? 'fixedP' : 'hdrP'}>Web Developer</p>
+            <img className={fix ? 'fixedimg' : 'hdrimg'} src={img1} alt='logo' />
+            <p className={fix ? 'fixedP' : 'hdrP'}>Web Developer</p>
           </div>
           <FontAwesomeIcon onClick={OpenedButton} className='menuicon' icon={MenuIcon} />
           <nav className={menuOpen ? 'hdr_menuitem' : 'hdr_seconditem'} >
             <FontAwesomeIcon onClick={ClosedButton} className='Xicon' icon={XIcon} />
             <ul>
-              <li className={active1? 'active' :''}><a href='#header'><span>Home</span></a></li>
-              <li className={active2? 'active' :''}><a href='#AboutMeSection'><span>About</span></a></li>
-              <li className={active3? 'active' :''}><a href='#MySkills_Container1'><span>My Skills</span></a></li>
-              <li className={active4? 'active' :''}><a href='#Project_Container'><span>My Projects</span></a></li>
-              <li className={active5? 'active' :''}><a href='#Contact_title'><span>Contact</span></a></li>
+              <li className={active1 ? 'active' : ''}><a href='#header'><span>Home</span></a></li>
+              <li className={active2 ? 'active' : ''}><a href='#AboutMeSection'><span>About</span></a></li>
+              <li className={active3 ? 'active' : ''}><a href='#MySkills_Container1'><span>My Skills</span></a></li>
+              <li className={active4 ? 'active' : ''}><a href='#Project_Container'><span>My Projects</span></a></li>
+              <li className={active5 ? 'active' : ''}><a href='#Contact_title'><span>Contact</span></a></li>
 
             </ul>
           </nav>
@@ -422,6 +426,62 @@ const App = () => {
                   <a target='_blank' href='https://onfuture.eu/' rel="noreferrer">
                     <button className='Projects_btnlive'> Live Demo</button></a>
                   <a target='_blank' href='https://github.com/KhataiAlizade/Onfuture' rel="noreferrer">
+                    <button className='Projects_btncode'> Source Code</button></a>
+                </div>
+              </div>
+            </nav>
+            <nav id='MyProjects_divitem' className={projectanimation2 ? 'skills_item3' : 'hidden'}>
+              <img src={img5} alt='onfuture' />
+              <div className='MyProjects_divitem'>
+                <h2>Weather App </h2>
+                <div className='projects_hritem'></div>
+                <p>WeatherTTS is a user-friendly weather application that 
+                  allows users to search for any city and view current weather details including temperature,
+                   feels like, wind speed, pressure, and humidity.
+                  It integrates with the OpenWeather API to fetch real-time weather data.</p>
+                <div className='Myprojectslb_container'>
+                  <span>Tech used : </span>
+                  <label className='projectslb_item'>HTML5 </label>
+                  <label className='projectslb_item'>CSS3 </label>
+                  <label className='projectslb_item'>TypeScript </label>
+                  <label className='projectslb_item'>React </label>
+                  <label className='projectslb_item'>OpenWeather Api </label>
+                  <label className='projectslb_item'>GeoDB  Api </label>
+
+
+                </div>
+                <div className='projects_buttons'>
+                  <a target='_blank' href='https://weathertts.netlify.app/' rel="noreferrer">
+                    <button className='Projects_btnlive'> Live Demo</button></a>
+                  <a target='_blank' href='https://github.com/KhataiAlizade/WeatherApp' rel="noreferrer">
+                    <button className='Projects_btncode'> Source Code</button></a>
+                </div>
+              </div>
+            </nav>
+            <nav id='MyProjects_divitem' className={projectanimation2 ? 'skills_item3' : 'hidden'}>
+              <img src={img6} alt='onfuture' />
+              <div className='MyProjects_divitem'>
+                <h2>KaStore  | Movie</h2>
+                <div className='projects_hritem'></div>
+                <p>KaStore is a movie and TV show catalog website.
+                  It allows users to search, filter, and explore a wide range of movies and TV shows, with features like sorting by popularity, 
+                  filtering by genre and language, and viewing detailed information.
+                   The app integrates with TMDb for real-time movie data and ensures a responsive, user-friendly interface.</p>
+                <div className='Myprojectslb_container'>
+                  <span>Tech used : </span>
+                  <label className='projectslb_item'>TypeScript </label>
+                  <label className='projectslb_item'>React  </label>
+                  <label className='projectslb_item'>JavaScript </label>
+                  <label className='projectslb_item'>Material UI </label>
+                  <label className='projectslb_item'>HTML </label>
+                  <label className='projectslb_item'>CSS </label>
+                  <label className='projectslb_item'>TMDB Api </label>
+
+                </div>
+                <div className='projects_buttons'>
+                  <a target='_blank' href='https://kastorel.netlify.app//' rel="noreferrer">
+                    <button className='Projects_btnlive'> Live Demo</button></a>
+                  <a target='_blank' href='https://github.com/KhataiAlizade/KaStore-site-' rel="noreferrer">
                     <button className='Projects_btncode'> Source Code</button></a>
                 </div>
               </div>
