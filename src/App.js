@@ -12,7 +12,6 @@ import { faLinkedin as linkedinicon } from '@fortawesome/free-brands-svg-icons';
 import { faGithub as githubicon } from '@fortawesome/free-brands-svg-icons';
 import { faInstagram as instaicon } from '@fortawesome/free-brands-svg-icons';
 import { faWhatsapp as whpicon } from '@fortawesome/free-brands-svg-icons';
-import img2 from './img/png1.png'
 import img3 from './img/Screenshot 2023-07-24 114849.png'
 import img4 from './img/Screenshot 2023-07-24 115049.png'
 import img5 from './img/Screenshot 2024-10-09 213353.png'
