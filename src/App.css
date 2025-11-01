@@ -344,7 +344,7 @@ animation-timing-function: ease-out;
   display: flex;
   flex-direction: wrap;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: -50px;
   margin-left: 200px;
   padding-bottom: 40px;
 }

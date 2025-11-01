@@ -12,7 +12,7 @@ import { faLinkedin as linkedinicon } from '@fortawesome/free-brands-svg-icons';
 import { faGithub as githubicon } from '@fortawesome/free-brands-svg-icons';
 import { faInstagram as instaicon } from '@fortawesome/free-brands-svg-icons';
 import { faWhatsapp as whpicon } from '@fortawesome/free-brands-svg-icons';
-import img2 from './img/picture.png'
+import img2 from './img/png1.png'
 import img3 from './img/Screenshot 2023-07-24 114849.png'
 import img4 from './img/Screenshot 2023-07-24 115049.png'
 import img5 from './img/Screenshot 2024-10-09 213353.png'
@@ -309,7 +309,7 @@ const App = () => {
         <div className='hdr_thirditem'>
           <h1 className='name_item1'>Hi, </h1>
           <h1 className='name_item2'> I'm <span style={{ color: "#FFD700" }}>K</span>hatai,</h1>
-          <h1 className='name_item3'> Front End Developer</h1>
+          <h1 className='name_item3'> Full-Stack Developer</h1>
           <p> {"<p> "}  Software Developer / Web Developer  {"</p> "} </p>
           <a href='#Contact_title'>
             <button> Contact Me! </button>
@@ -320,67 +320,76 @@ const App = () => {
         <div id='AboutMeSection' className='AboutMeSection'>
           <h1 className={bigAnimation ? "bigAnimation" : "hidden"}>About Me</h1>
           <div className='main_container'>
-            <nav className='main_navbarfirst'>
-              <img id='imgsection' className={animation1 ? "animation1" : "hidden"} src={img2} alt='salam' />
-            </nav>
             <nav className='main_navbarsecond'>
-              <p id='Psection' className={animation2 ? "animation2" : "hidden"}>I'm a Front-end React developer with expertise in <label>HTML, CSS, JavaScript, </label>and<label> React.</label> I enjoy creating attractive and user-friendly websites. I'm committed to writing clean
-                code and always eager to learn and improve my skills. <strong>I find immense satisfaction in collaborating with teams to transform ideas into reality and contribute my expertise to ensure projects' success.</strong> Throughout my journey, I've had the opportunity to work on several exciting projects,
-                ranging from e-commerce platforms to engaging content websites.
-              </p>
+            <p id='Psection' className={animation2 ? "animation2" : "hidden"}>
+  I'm a <label>Full-Stack Developer</label> with a strong focus on 
+  <label> Front-End engineering</label>. I specialize in building fast, scalable, 
+  and user-friendly web applications using 
+  <label> React, TypeScript, and Node.js</label>. My expertise spans crafting responsive 
+  interfaces with <label>HTML, CSS, and JavaScript</label> as well as developing and 
+  integrating robust <label>RESTful APIs</label> and <label>SQL databases</label> on the back end. 
+  I'm passionate about clean architecture, reusable components, and maintainable code 
+  that delivers real performance and great user experiences. 
+  <strong>I enjoy collaborating with teams to turn ideas into production-ready solutions 
+  and continuously explore new technologies to enhance design and efficiency.</strong>
+</p>
+
 
             </nav>
           </div>
         </div>
         <section id='MySkills_Container1' className='MySkills_Container'>
-          <h1 className={bigAnimation2 ? 'bigAnimation' : 'hidden'}>My Skills</h1>
-          <div className='MySkills_item'>
-            <nav id='MySkills_item1' className={skillsanimation1 ? 'skills_item1' : 'hidden'}>
-              <div className='frontendskills'>
-                <FontAwesomeIcon className='htmlicon' icon={htmlicon} />
-                <h2>Front End</h2>
-              </div>
-              <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>SCSS</li>
-                <li>JavaScript</li>
-                <li>TypeScript</li>
-                <li>Webpack</li>
-              </ul>
-            </nav>
-            <nav id='MySkills_item2' className={skillsanimation2 ? 'skills_item2' : 'hidden'}>
-              <div className='frontendskills'>
-                <FontAwesomeIcon className='gearicon' icon={gearicon} />
-                <h2>Frameworks and libraries</h2>
-              </div>
-              <ul>
-                <li>React js</li>
-                <li>Redux</li>
-                <li>Jquery</li>
-                <li>Bootstrap</li>
-                <li>Redux</li>
-                <li>Material Ui</li>
-              </ul>
-            </nav>
-            <nav id='MySkills_item3' className={skillsanimation3 ? 'skills_item3' : 'hidden'}>
-              <div className='frontendskills'>
-                <FontAwesomeIcon className='codeicon' icon={codeicon} />
-                <h2>Other</h2>
-              </div>
-              <ul>
-                <li>JSON</li>
-                <li>Responsive Design</li>
-                <li>Git</li>
-                <li>GitHub</li>
-                <li>Web API</li>
-                <li>Netlify</li>
-              </ul>
-            </nav>
-          </div>
-        </section>
+  <h1 className={bigAnimation2 ? 'bigAnimation' : ''}>My Skills</h1>
+  <div className='MySkills_item'>    
+    <nav id='MySkills_item1' className={skillsanimation1 ? 'skills_item1' : 'hidden'}>
+      <div className='frontendskills'>
+        <FontAwesomeIcon className='htmlicon' icon={htmlicon} />
+        <h2>Front-End</h2>
+      </div>
+      <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>SCSS</li>
+        <li>JavaScript (ES6+)</li>
+        <li>TypeScript</li>
+        <li>Responsive Design</li>
+      </ul>
+    </nav>
+
+    <nav id='MySkills_item2' className={skillsanimation2 ? 'skills_item2' : 'hidden'}>
+      <div className='frontendskills'>
+        <FontAwesomeIcon className='gearicon' icon={gearicon} />
+        <h2>Frameworks & Libraries</h2>
+      </div>
+      <ul>
+        <li>React.js</li>
+        <li>Redux</li>
+        <li>Material UI</li>
+        <li>Bootstrap</li>
+        <li>GraphQL</li>
+        <li>Docker</li>
+      </ul>
+    </nav>
+
+    <nav id='MySkills_item3' className={skillsanimation3 ? 'skills_item3' : 'hidden'}>
+      <div className='frontendskills'>
+        <FontAwesomeIcon className='codeicon' icon={codeicon} />
+        <h2>Backend & Tools</h2>
+      </div>
+      <ul>
+        <li>Node.js</li>
+        <li>RESTful APIs</li>
+        <li>SQL / MySQL</li>
+        <li>MongoDB</li>
+        <li>Git & GitHub</li>
+        <li>API Integration</li>
+      </ul>
+    </nav>
+  </div>
+</section>
+
         <section id='Project_Container' className='Project_Container'>
-          <h1 className={bigAnimation3 ? 'bigAnimation' : 'hidden'}>My Projects</h1>
+          <h1 className={bigAnimation3 ? 'bigAnimation' : ''}>My Projects</h1>
           <div className='MyProjects_blog'>
             <nav id='MyProjects_divitem1' className={projectanimation1 ? 'skills_item2' : 'hidden'}>
               <img src={img3} alt='texnoplus' />
@@ -430,7 +439,7 @@ const App = () => {
                 </div>
               </div>
             </nav>
-            <nav id='MyProjects_divitem' className={projectanimation2 ? 'skills_item3' : 'hidden'}>
+            <nav id='MyProjects_divitem' className={'skills_item3'}>
               <img src={img5} alt='onfuture' />
               <div className='MyProjects_divitem'>
                 <h2>Weather App </h2>
@@ -458,7 +467,7 @@ const App = () => {
                 </div>
               </div>
             </nav>
-            <nav id='MyProjects_divitem' className={projectanimation2 ? 'skills_item3' : 'hidden'}>
+            <nav id='MyProjects_divitem' className={'skills_item3'}>
               <img src={img6} alt='onfuture' />
               <div className='MyProjects_divitem'>
                 <h2>KaStore  | Movie</h2>
